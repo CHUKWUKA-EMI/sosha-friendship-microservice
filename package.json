@@ -4,7 +4,7 @@
   "description": "",
   "engines": {
     "node": "14.x",
-    "npm": "1.22.18"
+    "yarn": "1.22.18"
   },
   "author": "Chukwuka Emi",
   "private": true,
