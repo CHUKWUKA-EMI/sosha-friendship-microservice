@@ -1,0 +1,12 @@
+soshadb_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.me-dubai-1.oraclecloud.com))(connect_data=(service_name=g094790142f4d14_soshadb_high.adb.oraclecloud.com))(security=(ssl_server_cert_dn="CN=adb.me-dubai-1.oraclecloud.com, OU=Oracle ADB DUBAI, O=Oracle Corporation, L=Redwood City, ST=California, C=US")))
+
+soshadb_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.me-dubai-1.oraclecloud.com))(connect_data=(service_name=g094790142f4d14_soshadb_low.adb.oraclecloud.com))(security=(ssl_server_cert_dn="CN=adb.me-dubai-1.oraclecloud.com, OU=Oracle ADB DUBAI, O=Oracle Corporation, L=Redwood City, ST=California, C=US")))
+
+soshadb_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.me-dubai-1.oraclecloud.com))(connect_data=(service_name=g094790142f4d14_soshadb_medium.adb.oraclecloud.com))(security=(ssl_server_cert_dn="CN=adb.me-dubai-1.oraclecloud.com, OU=Oracle ADB DUBAI, O=Oracle Corporation, L=Redwood City, ST=California, C=US")))
+
+soshadb_tp = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.me-dubai-1.oraclecloud.com))(connect_data=(service_name=g094790142f4d14_soshadb_tp.adb.oraclecloud.com))(security=(ssl_server_cert_dn="CN=adb.me-dubai-1.oraclecloud.com, OU=Oracle ADB DUBAI, O=Oracle Corporation, L=Redwood City, ST=California, C=US")))
+
+soshadb_tpurgent = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.me-dubai-1.oraclecloud.com))(connect_data=(service_name=g094790142f4d14_soshadb_tpurgent.adb.oraclecloud.com))(security=(ssl_server_cert_dn="CN=adb.me-dubai-1.oraclecloud.com, OU=Oracle ADB DUBAI, O=Oracle Corporation, L=Redwood City, ST=California, C=US")))
+
+
+
