@@ -6,14 +6,9 @@ import { FriendShip } from 'src/friendship/entities/friendship.entity';
 
 config();
 
-const walletFolder = './oracleWallet/';
-const CONN_STRING = `${process.env.ORACLE_CONN_STRING}?wallet_location=${walletFolder}`;
-
 const ORMCONFIG: TypeOrmModuleOptions = {
-  type: 'oracle',
-  connectString: CONN_STRING,
-  username: 'Admin',
-  password: process.env.DB_PASSWORD,
+  type: 'postgres',
+  url: process.env.DATABASE_URL,
   synchronize: false,
   logging: true,
   migrationsRun: false,

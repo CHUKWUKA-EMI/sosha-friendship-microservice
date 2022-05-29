@@ -8,9 +8,7 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity({
-  name: process.env.NODE_ENV === 'production' ? 'friendship' : 'friendship_dev',
-})
+@Entity({ name: 'friendship' })
 export class FriendShip {
   @PrimaryGeneratedColumn('increment')
   id: number;
@@ -23,26 +21,23 @@ export class FriendShip {
   @Column({ type: 'uuid', nullable: false })
   friendId: string;
 
-  @Column({ nullable: false })
+  @Column({ type: 'varchar', nullable: false })
   friendFirstName: string;
 
-  @Column({ nullable: false })
+  @Column({ type: 'varchar', nullable: false })
   friendLastName: string;
 
-  @Column({ nullable: false })
+  @Column({ type: 'varchar', nullable: false })
   friendUserName: string;
 
   @IsUrl()
   @Column({ type: 'varchar', nullable: true })
   friendImageUrl?: string;
 
-  @Column({
-    nullable: false,
-    type: 'varchar',
-  })
+  @Column({ type: 'varchar', nullable: false })
   friendshipStatus: string;
 
-  @Column({ type: 'varchar2', nullable: true })
+  @Column({ type: 'varchar', nullable: true })
   lastMessage?: string;
 
   @CreateDateColumn()

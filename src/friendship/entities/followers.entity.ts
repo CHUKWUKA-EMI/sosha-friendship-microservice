@@ -2,17 +2,16 @@
 import { Column, Entity, Index, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({
-  name: process.env.NODE_ENV === 'production' ? 'followers' : 'followers_dev',
-})
+  name: 'followers'})
 export class Followers {
   @PrimaryGeneratedColumn('increment')
   id: number;
 
   @Index()
-  @Column({ nullable: false })
+  @Column({type:"varchar", nullable: false })
   userId: string;
 
   @Index()
-  @Column({ nullable: false })
+  @Column({type:"varchar", nullable: false })
   followerId: string;
 }
