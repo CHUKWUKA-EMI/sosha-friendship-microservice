@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "",
   "engines": {
-    "node": "14.x",
-    "yarn": "1.22.18"
+    "node": "16.x",
+    "yarn": "1.22.19"
   },
   "author": "Chukwuka Emi",
   "private": true,
