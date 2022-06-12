@@ -9,7 +9,9 @@ config();
 const ORMCONFIG: TypeOrmModuleOptions = {
   type: 'postgres',
   url: process.env.DATABASE_URL,
-  ssl: true,
+  ssl: {
+    rejectUnauthorized: false,
+  },
   synchronize: false,
   logging: true,
   migrationsRun: false,
